@@ -1,0 +1,15 @@
+{
+  "name": "vc-udoschwarz",
+  "version": "0.1.0",
+  "author": "Oliver Schwarz",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-htmlhint": "*",
+    "grunt-contrib-watch": "*",
+    "matchdep": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git:github.com/oliverschwarz/vc-udoschwarz.git"
+  }
+}
