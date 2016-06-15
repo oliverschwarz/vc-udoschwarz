@@ -5,6 +5,37 @@
   module.exports = function(grunt) {
     grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
+
+      sass: {
+        dist: {
+          files: {
+            'src/css/styles.css' : 'src/scss/styles.scss'
+          }
+        }
+      },
+
+      watch: {
+        html: {
+          files: ['<%= htmlhint.build.src %>'],
+          tasks: ['htmlhint']
+        },
+        js: {
+          files: ['<%= jshint.files %>'],
+          tasks: ['jshint']
+        },
+        css: {
+          files: '**/*.scss',
+          tasks: ['sass'],
+          options: {
+            sourcemap: 'none'
+          }
+        }
+      },
+
+      jshint: {
+        files: ['Gruntfile.js', 'src/**/*.js']
+      },
+
       htmlhint: {
         build: {
           options: {

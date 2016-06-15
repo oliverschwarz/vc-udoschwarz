@@ -4,12 +4,15 @@
   "author": "Oliver Schwarz",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-htmlhint": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "*",
+    "grunt-htmlhint": "*",
     "matchdep": "latest"
   },
   "repository": {
     "type": "git",
     "url": "git:github.com/oliverschwarz/vc-udoschwarz.git"
-  }
+  },
+  "license": "CC-BY-4.0"
 }
